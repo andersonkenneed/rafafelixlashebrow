@@ -8,31 +8,42 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --background: 40 33% 97%; /* Off-white #FAF9F6 */
+    --foreground: 240 10% 10%; /* Darker for text, ensures contrast */
+
+    --card: 0 0% 100%; /* White for cards */
+    --card-foreground: 240 10% 10%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --popover-foreground: 240 10% 10%;
+
+    --primary: 354 53% 89%; /* Blush Pink #F2D7D9 */
+    --primary-foreground: 350 40% 20%; /* Dark, slightly desaturated pink/brown for text on primary */
+
+    --secondary: 354 40% 94%; /* Lighter variant of blush pink for secondary elements */
+    --secondary-foreground: 350 40% 20%;
+
+    --muted: 354 30% 95%; /* Muted pinkish tone */
+    --muted-foreground: 240 5% 45%; /* Lighter gray for muted text */
+
+    --accent: 349 35% 57%; /* Rose Gold #B76E79 */
+    --accent-foreground: 349 100% 96%; /* Very light pink/off-white for text on rose gold */
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+
+    --border: 354 30% 88%; /* Border color related to pink palette */
+    --input: 354 30% 88%;
+    --ring: 349 35% 57%; /* Rose gold for rings */
+
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    /* Sidebar variables might not be used extensively in a landing page but are kept for consistency */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -42,39 +53,36 @@ body {
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    /* Dark theme variables - adjusted for the brand's aesthetic if a dark mode is desired */
+    --background: 240 10% 3.9%;
+    --foreground: 40 33% 97%;
+
+    --card: 240 10% 5.9%;
+    --card-foreground: 40 33% 97%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 40 33% 97%;
+
+    --primary: 349 35% 57%; /* Rose gold as primary in dark */
+    --primary-foreground: 349 100% 96%;
+
+    --secondary: 354 30% 20%; /* Darker pinkish tone */
+    --secondary-foreground: 40 33% 97%;
+
+    --muted: 354 20% 15%;
+    --muted-foreground: 40 20% 70%;
+
+    --accent: 354 53% 89%; /* Blush Pink as accent in dark */
+    --accent-foreground: 350 40% 20%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --border: 354 20% 20%;
+    --input: 354 20% 20%;
+    --ring: 354 53% 89%;
   }
 }
 
@@ -84,5 +92,25 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    scroll-behavior: smooth;
   }
+  section {
+    @apply py-16 md:py-24;
+  }
+}
+
+/* Pulse animation for WhatsApp button */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 hsl(var(--accent) / 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px hsl(var(--accent) / 0);
+  }
+}
+
+.animate-pulse-whatsapp {
+  animation: pulse 2s infinite;
 }

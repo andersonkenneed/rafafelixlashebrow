@@ -1,0 +1,38 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { Sparkles, MessageCircle } from 'lucide-react';
+
+const WHATSAPP_LINK = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20agendar%20meus%20c%C3%ADlios%21";
+
+export function HeroSection() {
+  return (
+    <section className="relative h-[calc(100vh-4rem)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+      <Image
+        src="https://placehold.co/1920x1080.png"
+        alt="Beautiful lashes background"
+        layout="fill"
+        objectFit="cover"
+        quality={90}
+        className="absolute inset-0 z-0 filter brightness-50"
+        data-ai-hint="beauty salon soft focus"
+        priority
+      />
+      <div className="relative z-10 p-6 max-w-3xl animate-fade-in-up">
+        <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          Discover Your Most Beautiful Look Yet <Sparkles className="inline-block h-10 w-10 text-primary animate-pulse" />
+        </h1>
+        <p className="font-body text-lg sm:text-xl md:text-2xl text-primary-foreground mb-10">
+          Luxury Lash &amp; Brow Experiences by Rafaela Felix
+        </p>
+        <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg">
+          <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book Your Spot on WhatsApp
+          </Link>
+        </Button>
+      </div>
+      {/* Subtle heart doodles effect if possible with CSS or simple SVG, else omit */}
+    </section>
+  );
+}
