@@ -8,14 +8,26 @@ const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1%2C%20Rafaela!%2
 export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-4rem)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Desktop Image */}
       <Image
         src="https://i.imgur.com/SafANvl.png"
-        alt="Fundo com cílios bonitos e ambiente de salão de beleza"
+        alt="Fundo com cílios bonitos e ambiente de salão de beleza - Desktop"
         layout="fill"
         objectFit="cover"
         quality={90}
-        className="absolute inset-0 z-0 filter brightness-50"
+        className="absolute inset-0 z-0 filter brightness-50 hidden md:block"
         data-ai-hint="beauty salon soft focus"
+        priority
+      />
+      {/* Mobile Image */}
+      <Image
+        src="https://i.imgur.com/SafANvl.png" // Você pode substituir esta URL pela imagem mobile desejada
+        alt="Fundo com cílios bonitos e ambiente de salão de beleza - Mobile"
+        layout="fill"
+        objectFit="cover"
+        quality={80} // Qualidade um pouco menor para mobile pode ser considerada
+        className="absolute inset-0 z-0 filter brightness-50 block md:hidden"
+        data-ai-hint="mobile friendly beauty background"
         priority
       />
       <div className="relative z-10 p-6 max-w-3xl animate-fade-in-up">
