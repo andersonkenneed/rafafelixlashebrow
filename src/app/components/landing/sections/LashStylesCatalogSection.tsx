@@ -106,9 +106,9 @@ export function LashStylesCatalogSection() {
           <Image
             src="https://i.imgur.com/KJ3IYMR.png"
             alt="Ícone de brilho"
-            width={40}
-            height={40}
-            className="inline-block ml-2 h-10 w-10 align-middle"
+            width={50}
+            height={50}
+            className="inline-block ml-2 align-middle"
           />
         </h2>
         <p className="font-body text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
