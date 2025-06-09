@@ -69,8 +69,8 @@ export function EyebrowDesignSection() {
           {eyebrowServices.map((service, index) => (
             <Card key={service.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group animate-fade-in-up flex flex-col" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader className="p-0">
-                <button 
-                  onClick={() => openImagePreview(service.imageUrl, service.name)} 
+                <button
+                  onClick={() => openImagePreview(service.imageUrl, service.name)}
                   className="relative h-60 w-full focus:outline-none group"
                   aria-label={`Ver imagem ampliada de ${service.name}`}
                 >
@@ -99,11 +99,11 @@ export function EyebrowDesignSection() {
           ))}
         </div>
       </div>
-      <ImagePreviewModal 
-        imageUrl={selectedImage} 
-        isOpen={!!selectedImage} 
+      <ImagePreviewModal
+        imageUrl={selectedImage}
+        isOpen={!!selectedImage}
         onClose={closeImagePreview}
-        altText={altText} 
+        altText={altText}
       />
     </section>
   );
