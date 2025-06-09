@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CreditCard, Smartphone, CircleDollarSign } from 'lucide-react'; // Smartphone for PIX, CircleDollarSign for Cash
 
@@ -53,7 +54,7 @@ export function PricingSection() {
                   {tier.items.map((item) => (
                     <li key={item.service} className="flex justify-between items-center font-body text-foreground border-b border-border/50 pb-2">
                       <span>{item.service}</span>
-                      <span className="font-semibold text-primary-foreground">{item.price}</span>
+                      <span className="font-semibold text-accent">{item.price}</span>
                     </li>
                   ))}
                 </ul>
