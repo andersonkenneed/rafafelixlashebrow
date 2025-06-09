@@ -5,6 +5,7 @@ import {
   Dialog,
   DialogContent,
   DialogClose,
+  DialogTitle, // Import DialogTitle
 } from '@/components/ui/dialog';
 import Image from 'next/image';
 import { X } from 'lucide-react';
@@ -22,12 +23,13 @@ export function ImagePreviewModal({ imageUrl, isOpen, onClose, altText = "Image 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="sm:max-w-[90vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[60vw] p-0 overflow-hidden border-0 bg-transparent shadow-none">
+        <DialogTitle className="sr-only">{altText}</DialogTitle> {/* Add visually hidden DialogTitle */}
         <div className="relative w-full h-auto max-h-[90vh] flex items-center justify-center">
           <Image
             src={imageUrl}
             alt={altText}
-            width={1200} 
-            height={800} 
+            width={1200}
+            height={800}
             className="object-contain w-full h-full max-h-[85vh] rounded-md"
             quality={95}
           />
