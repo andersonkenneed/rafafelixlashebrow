@@ -21,11 +21,11 @@ export function HeroSection() {
       />
       {/* Mobile Image */}
       <Image
-        src="https://i.imgur.com/SafANvl.png" // Você pode substituir esta URL pela imagem mobile desejada
+        src="https://i.imgur.com/GyOxMWz.png" 
         alt="Fundo com cílios bonitos e ambiente de salão de beleza - Mobile"
         layout="fill"
         objectFit="cover"
-        quality={80} // Qualidade um pouco menor para mobile pode ser considerada
+        quality={80} 
         className="absolute inset-0 z-0 filter brightness-50 block md:hidden"
         data-ai-hint="mobile friendly beauty background"
         priority
