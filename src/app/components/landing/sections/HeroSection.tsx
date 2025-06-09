@@ -22,7 +22,7 @@ export function HeroSection() {
         <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
           Cílios e Sobrancelhas Perfeitos para um Olhar Deslumbrante <Sparkles className="inline-block h-10 w-10 text-primary animate-pulse" />
         </h1>
-        <p className="font-body text-lg sm:text-xl md:text-2xl text-primary-foreground mb-10">
+        <p className="font-body text-lg sm:text-xl md:text-2xl text-accent-foreground mb-10">
           Experiências de Luxo em Cílios e Sobrancelhas por Rafaela Felix
         </p>
         <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg">
