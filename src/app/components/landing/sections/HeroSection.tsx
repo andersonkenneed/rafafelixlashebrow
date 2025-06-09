@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sparkles, MessageCircle } from 'lucide-react';
 
-const WHATSAPP_LINK = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20agendar%20meus%20c%C3%ADlios%21";
+const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20descobrir%20meu%20look%20mais%20deslumbrante%20e%20agendar%20um%20hor%C3%A1rio.";
 
 export function HeroSection() {
   return (
@@ -32,7 +32,6 @@ export function HeroSection() {
           </Link>
         </Button>
       </div>
-      {/* Subtle heart doodles effect if possible with CSS or simple SVG, else omit */}
     </section>
   );
 }

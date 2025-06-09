@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 
-const WHATSAPP_LINK = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20agendar%20meus%20c%C3%ADlios%21";
+const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.";
 
 export function FloatingWhatsAppButton() {
   return (
