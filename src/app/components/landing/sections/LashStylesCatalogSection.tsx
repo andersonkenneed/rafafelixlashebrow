@@ -20,7 +20,7 @@ const lashStyles: LashStyle[] = [
     name: 'Efeito Molhado',
     applicationPrice: 'R$ 150,00',
     maintenancePrice: 'R$ 120,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/LUpwM8Y.png',
     imageHint: 'wet look lashes',
     description: 'Efeito sofisticado que simula cílios úmidos, realçando o olhar com brilho e definição.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
