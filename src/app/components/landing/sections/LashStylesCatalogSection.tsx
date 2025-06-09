@@ -173,7 +173,7 @@ export function LashStylesCatalogSection() {
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                 <Badge variant="secondary" className="bg-primary/20 text-primary hover:bg-primary/30 font-semibold">Popular</Badge>
+                 {/* Badge "Popular" removido */}
               </CardFooter>
             </Card>
           ))}
