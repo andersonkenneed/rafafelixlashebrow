@@ -8,7 +8,7 @@ export function AboutRafaelaSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center md:justify-end animate-fade-in-up">
             <Image
-              src="https://placehold.co/400x400.png"
+              src="https://i.imgur.com/3m1oHUi.png"
               alt="Rafaela Felix, Especialista em Cílios e Sobrancelhas"
               width={350}
               height={350}
