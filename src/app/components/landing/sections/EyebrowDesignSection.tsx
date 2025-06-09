@@ -6,7 +6,7 @@ export function EyebrowDesignSection() {
     <section id="eyebrow-design" className="bg-primary/10 relative overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-8">
-          Design de Sobrancelhas <span className="text-accent">&amp; Arte</span>
+          Design de Sobrancelhas <span className="text-accent">&amp; brow</span>
         </h2>
         <p className="font-body text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
           Sobrancelhas perfeitamente esculpidas em breve! Fique atenta para nossa nova gama de serviços de design de sobrancelhas.
@@ -32,7 +32,7 @@ export function EyebrowDesignSection() {
             </Card>
           ))}
         </div>
-        <div 
+        <div
           className="absolute inset-0 -z-10 animate-shimmer"
           style={{
             backgroundImage: 'linear-gradient(to right, transparent 0%, hsl(var(--primary)/0.1) 50%, transparent 100%)',
