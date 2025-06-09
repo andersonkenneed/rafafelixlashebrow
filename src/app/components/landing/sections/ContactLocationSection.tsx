@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Instagram, Phone, Mail } from 'lucide-react';
 
-const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/yourcodedaddress"; // Substitua pelo link real do Google Maps
+const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/JDEh5bjUkR8Kmfr66";
 const INSTAGRAM_LINK = "https://instagram.com/rafaelafelix"; // Substitua pelo perfil real do Instagram
 
 export function ContactLocationSection() {
@@ -33,14 +33,14 @@ export function ContactLocationSection() {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3" />
-                <Link href="tel:+5500000000000" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                  +55 (XX) XXXXX-XXXX {/* Mantenha ou atualize o número de telefone */}
+                <Link href="tel:+5561998672542" className="font-body text-muted-foreground hover:text-accent transition-colors">
+                  +55 (61) 99867-2542
                 </Link>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3" />
                 <Link href="mailto:contato@rafaelafelix.com" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                  contato@rafaelafelix.com {/* Mantenha ou atualize o email */}
+                  contato@rafaelafelix.com
                 </Link>
               </div>
             </CardContent>
