@@ -30,7 +30,7 @@ const lashStyles: LashStyle[] = [
     name: 'Isa Atrasada – Fio Y',
     applicationPrice: 'R$ 160,00',
     maintenancePrice: 'R$ 130,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/BFIxp24.png',
     imageHint: 'Y-shape lashes',
     description: 'Fios em formato Y para um volume delicado, leve e marcante.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
