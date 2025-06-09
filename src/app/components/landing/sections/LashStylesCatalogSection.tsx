@@ -1,8 +1,12 @@
 
+"use client"; // Add this directive
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { DollarSign, Info } from 'lucide-react'; // Using Info for maintenance note
+import { DollarSign, Info } from 'lucide-react'; 
+import { useState } from 'react'; // Import useState
+import { ImagePreviewModal } from '@/app/components/ui/ImagePreviewModal'; // Import the modal
 
 interface LashStyle {
   id: string;
@@ -98,6 +102,18 @@ const lashStyles: LashStyle[] = [
 ];
 
 export function LashStylesCatalogSection() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [altText, setAltText] = useState<string>("Lash Style Preview");
+
+  const openImagePreview = (imageUrl: string, name: string) => {
+    setSelectedImage(imageUrl);
+    setAltText(name);
+  };
+
+  const closeImagePreview = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section id="lash-styles" className="bg-background">
       <div className="container mx-auto px-4">
@@ -118,7 +134,11 @@ export function LashStylesCatalogSection() {
           {lashStyles.map((style, index) => (
             <Card key={style.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group animate-fade-in-up flex flex-col" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader className="p-0">
-                <div className="relative h-60 w-full">
+                <button 
+                  onClick={() => openImagePreview(style.imageUrl, style.name)} 
+                  className="relative h-60 w-full focus:outline-none group"
+                  aria-label={`Ver imagem ampliada de ${style.name}`}
+                >
                   <Image
                     src={style.imageUrl}
                     alt={style.name}
@@ -127,7 +147,10 @@ export function LashStylesCatalogSection() {
                     className="transition-transform duration-500 group-hover:scale-105"
                     data-ai-hint={style.imageHint}
                   />
-                </div>
+                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-sm bg-black/50 px-2 py-1 rounded">Ver Maior</span>
+                  </div>
+                </button>
               </CardHeader>
               <CardContent className="p-6 flex-grow">
                 <CardTitle className="font-headline text-2xl text-accent mb-2">{style.name}</CardTitle>
@@ -156,6 +179,12 @@ export function LashStylesCatalogSection() {
           ))}
         </div>
       </div>
+      <ImagePreviewModal 
+        imageUrl={selectedImage} 
+        isOpen={!!selectedImage} 
+        onClose={closeImagePreview}
+        altText={altText}
+      />
     </section>
   );
 }

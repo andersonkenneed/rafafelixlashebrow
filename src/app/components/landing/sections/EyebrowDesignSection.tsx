@@ -1,6 +1,11 @@
+
+"use client"; // Add this directive
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { DollarSign } from 'lucide-react';
+import { useState } from 'react'; // Import useState
+import { ImagePreviewModal } from '@/app/components/ui/ImagePreviewModal'; // Import the modal
 
 interface EyebrowService {
   id: string;
@@ -39,6 +44,18 @@ const eyebrowServices: EyebrowService[] = [
 ];
 
 export function EyebrowDesignSection() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [altText, setAltText] = useState<string>("Eyebrow Service Preview");
+
+  const openImagePreview = (imageUrl: string, name: string) => {
+    setSelectedImage(imageUrl);
+    setAltText(name);
+  };
+
+  const closeImagePreview = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section id="eyebrow-design" className="bg-primary/10 relative overflow-hidden">
       <div className="container mx-auto px-4 text-center">
@@ -52,7 +69,11 @@ export function EyebrowDesignSection() {
           {eyebrowServices.map((service, index) => (
             <Card key={service.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group animate-fade-in-up flex flex-col" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader className="p-0">
-                <div className="relative h-60 w-full">
+                <button 
+                  onClick={() => openImagePreview(service.imageUrl, service.name)} 
+                  className="relative h-60 w-full focus:outline-none group"
+                  aria-label={`Ver imagem ampliada de ${service.name}`}
+                >
                   <Image
                     src={service.imageUrl}
                     alt={service.name}
@@ -61,7 +82,10 @@ export function EyebrowDesignSection() {
                     className="transition-transform duration-500 group-hover:scale-105"
                     data-ai-hint={service.imageHint}
                   />
-                </div>
+                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-sm bg-black/50 px-2 py-1 rounded">Ver Maior</span>
+                  </div>
+                </button>
               </CardHeader>
               <CardContent className="p-6 flex-grow">
                 <CardTitle className="font-headline text-2xl text-accent mb-2">{service.name}</CardTitle>
@@ -75,6 +99,13 @@ export function EyebrowDesignSection() {
           ))}
         </div>
       </div>
+      <ImagePreviewModal 
+        imageUrl={selectedImage} 
+        isOpen={!!selectedImage} 
+        onClose={closeImagePreview}
+        altText={altText} 
+      />
     </section>
   );
 }
+
