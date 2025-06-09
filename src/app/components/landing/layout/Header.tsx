@@ -12,8 +12,8 @@ export function Header() {
           <Image
             src="https://i.imgur.com/gA9yOM3.png"
             alt="Rafaela Felix Lash & Brow Logo"
-            width={50}
-            height={50}
+            width={60}
+            height={60}
             className="rounded-full"
           />
         </nav>
