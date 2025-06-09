@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'FelixLash - Rafaela Felix',
+  title: 'Rafaela Felix Lash & Brow',
   description: 'Experiências de Luxo em Cílios e Sobrancelhas por Rafaela Felix. Agende seu horário pelo WhatsApp!',
 };
 
