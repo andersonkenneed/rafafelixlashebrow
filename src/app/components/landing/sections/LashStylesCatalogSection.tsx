@@ -102,7 +102,14 @@ export function LashStylesCatalogSection() {
     <section id="lash-styles" className="bg-background">
       <div className="container mx-auto px-4">
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
-          Nossos Estilos de Cílios Exclusivos <span className="text-accent">✨</span>
+          Nossos Estilos de Cílios Exclusivos
+          <Image
+            src="https://i.imgur.com/KJ3IYMR.png"
+            alt="Ícone de brilho"
+            width={32}
+            height={32}
+            className="inline-block ml-2 h-8 w-8 align-middle"
+          />
         </h2>
         <p className="font-body text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
           Um guia para você conhecer meus serviços e escolher o que mais combina com você!
