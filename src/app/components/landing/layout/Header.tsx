@@ -10,7 +10,7 @@ export function Header() {
         </Link>
         <nav className="flex items-center">
           <Image
-            src="https://i.imgur.com/gitpUGK.png"
+            src="https://i.imgur.com/gA9yOM3.png"
             alt="Rafaela Felix Lash & Brow Logo"
             width={40}
             height={40}
