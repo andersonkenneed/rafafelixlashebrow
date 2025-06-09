@@ -3,14 +3,14 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sparkles, MessageCircle } from 'lucide-react';
 
-const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20realçar%20meu%20olhar%20e%20agendar%20um%20hor%C3%A1rio!";
+const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1%2C%20Rafaela!%20Vi%20seu%20site%20e%20quero%20real%C3%A7ar%20meu%20olhar%2C%20agendando%20um%20hor%C3%A1rio%20para%20c%C3%ADlios%2Fsobrancelhas.";
 
 export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-4rem)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="https://placehold.co/1920x1080.png"
-        alt="Fundo com cílios bonitos"
+        src="https://i.imgur.com/SafANvl.png"
+        alt="Fundo com cílios bonitos e ambiente de salão de beleza"
         layout="fill"
         objectFit="cover"
         quality={90}
