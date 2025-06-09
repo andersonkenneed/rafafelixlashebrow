@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -40,7 +41,7 @@ const lashStyles: LashStyle[] = [
     name: 'Patygirl – Fio 3D',
     applicationPrice: 'R$ 170,00',
     maintenancePrice: 'R$ 140,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/mUTOTn5.png',
     imageHint: '3D volume lashes',
     description: 'Volume tridimensional com fios 3D para um olhar expressivo e cheio de glamour.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
@@ -50,7 +51,7 @@ const lashStyles: LashStyle[] = [
     name: 'Girlpower – Fio 4D',
     applicationPrice: 'R$ 170,00',
     maintenancePrice: 'R$ 140,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/MTbdSbW.png',
     imageHint: '4D volume lashes',
     description: 'Mais volume e impacto com a técnica de fios 4D, para um olhar poderoso.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
@@ -60,7 +61,7 @@ const lashStyles: LashStyle[] = [
     name: 'Duda Sensata – Fio 5D',
     applicationPrice: 'R$ 180,00',
     maintenancePrice: 'R$ 150,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://placehold.co/600x400.png', // Mantendo placeholder conforme não fornecido
     imageHint: '5D volume lashes',
     description: 'Máximo volume e sofisticação com fios 5D, para um olhar intenso e deslumbrante.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
@@ -70,7 +71,7 @@ const lashStyles: LashStyle[] = [
     name: 'Sereia',
     applicationPrice: 'R$ 130,00',
     maintenancePrice: 'Sem manutenção',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/cJh6HNf.png',
     imageHint: 'mermaid lashes cat eye',
     description: 'Destaque especial apenas na cauda dos cílios, criando um efeito "cat eye" sutil e charmoso.',
   },
@@ -79,7 +80,7 @@ const lashStyles: LashStyle[] = [
     name: 'Felix Fox – Efeito Fox / Delineado',
     applicationPrice: 'R$ 180,00',
     maintenancePrice: 'R$ 150,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/mOngGuO.png',
     imageHint: 'fox eye lashes eyeliner effect',
     description: 'Cílios alongados no canto externo para um efeito "fox eye" ou delineado, super moderno e sedutor.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
@@ -89,7 +90,7 @@ const lashStyles: LashStyle[] = [
     name: 'Brown – Fio Marrom',
     applicationPrice: 'R$ 170,00',
     maintenancePrice: 'R$ 140,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/cQleY9q.png',
     imageHint: 'brown lashes natural look',
     description: 'Suavidade e naturalidade com fios em tom marrom, perfeito para um look discreto ou para loiras.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
