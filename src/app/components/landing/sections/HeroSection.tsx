@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sparkles, MessageCircle } from 'lucide-react';
 
-const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20descobrir%20meu%20look%20mais%20deslumbrante%20e%20agendar%20um%20hor%C3%A1rio.";
+const WHATSAPP_LINK = "https://wa.me/5561998672542?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20realçar%20meu%20olhar%20e%20agendar%20um%20hor%C3%A1rio!";
 
 export function HeroSection() {
   return (
@@ -20,7 +20,7 @@ export function HeroSection() {
       />
       <div className="relative z-10 p-6 max-w-3xl animate-fade-in-up">
         <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          Descubra o Seu Look Mais Deslumbrante <Sparkles className="inline-block h-10 w-10 text-primary animate-pulse" />
+          Cílios e Sobrancelhas Perfeitos para um Olhar Deslumbrante <Sparkles className="inline-block h-10 w-10 text-primary animate-pulse" />
         </h1>
         <p className="font-body text-lg sm:text-xl md:text-2xl text-primary-foreground mb-10">
           Experiências de Luxo em Cílios e Sobrancelhas por Rafaela Felix
