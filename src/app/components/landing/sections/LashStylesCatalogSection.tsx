@@ -61,7 +61,7 @@ const lashStyles: LashStyle[] = [
     name: 'Duda Sensata – Fio 5D',
     applicationPrice: 'R$ 180,00',
     maintenancePrice: 'R$ 150,00',
-    imageUrl: 'https://placehold.co/600x400.png', // Mantendo placeholder conforme não fornecido
+    imageUrl: 'https://i.imgur.com/UuSgiV8.png',
     imageHint: '5D volume lashes',
     description: 'Máximo volume e sofisticação com fios 5D, para um olhar intenso e deslumbrante.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',

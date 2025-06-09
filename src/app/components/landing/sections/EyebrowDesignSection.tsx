@@ -24,7 +24,7 @@ const eyebrowServices: EyebrowService[] = [
     id: 'brow2',
     name: 'Design de Sobrancelha + Henna',
     price: 'R$ 50,00',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.imgur.com/j3YWXKE.png',
     imageHint: 'eyebrow design henna',
     description: 'Design de sobrancelhas com aplicação de henna para preencher falhas e definir o olhar.',
   },
