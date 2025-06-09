@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Instagram, Facebook, Youtube } from 'lucide-react'; // Example social icons
 
-const INSTAGRAM_LINK = "https://instagram.com/rafaelafelix"; // Replace with actual Instagram profile
+const INSTAGRAM_LINK = "https://instagram.com/rafafelixbeauty"; 
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

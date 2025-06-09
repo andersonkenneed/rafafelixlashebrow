@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Instagram, Phone, Mail } from 'lucide-react';
 
 const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/JDEh5bjUkR8Kmfr66";
-const INSTAGRAM_LINK = "https://instagram.com/rafaelafelix"; // Substitua pelo perfil real do Instagram
+const INSTAGRAM_LINK = "https://instagram.com/rafafelixbeauty";
 
 export function ContactLocationSection() {
   return (
@@ -56,7 +56,7 @@ export function ContactLocationSection() {
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-accent-foreground bg-accent hover:bg-accent/90 transition-colors group"
               >
                 <Instagram className="h-6 w-6 mr-2 transform group-hover:scale-110 transition-transform" />
-                Siga @rafaelafelix
+                Siga @rafafelixbeauty
               </Link>
                <p className="font-body text-muted-foreground mt-4 text-sm">Toque nos ícones para acessar!</p>
             </CardContent>
