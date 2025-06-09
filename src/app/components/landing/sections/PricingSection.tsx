@@ -13,15 +13,25 @@ const lashServicesData = [
   { service: 'Brown – Fio Marrom', applicationPrice: 'R$ 170,00', maintenancePrice: 'R$ 140,00' },
 ];
 
+const eyebrowServicesData = [
+  { service: 'Design de Sobrancelha', price: 'R$ 40,00' },
+  { service: 'Design de Sobrancelha + Henna', price: 'R$ 50,00' },
+  { service: 'Brow Lamination', price: 'R$ 100,00' },
+];
+
 const pricingTiers = [
   {
     name: "Aplicação de Cílios",
     items: lashServicesData.map(s => ({ service: s.service, price: s.applicationPrice })),
   },
   {
-    name: "Manutenção",
+    name: "Manutenção de Cílios",
     items: lashServicesData.map(s => ({ service: s.service, price: s.maintenancePrice })),
   },
+  {
+    name: "Design de Sobrancelhas & Brow",
+    items: eyebrowServicesData.map(s => ({ service: s.service, price: s.price })),
+  }
 ];
 
 export function PricingSection() {
@@ -32,9 +42,9 @@ export function PricingSection() {
           Tabela de Preços &amp; <span className="text-accent">Pagamento</span>
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           {pricingTiers.map((tier, tierIndex) => (
-            <Card key={tier.name} className="shadow-lg animate-fade-in-up" style={{ animationDelay: `${tierIndex * 0.15}s` }}>
+            <Card key={tier.name} className="shadow-lg animate-fade-in-up" style={{ animationDelay: `${tierIndex * 0.1}s` }}>
               <CardHeader>
                 <CardTitle className="font-headline text-2xl text-accent">{tier.name}</CardTitle>
               </CardHeader>
@@ -47,7 +57,7 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                 {tier.name === "Manutenção" && (
+                 {tier.name === "Manutenção de Cílios" && (
                    <p className="text-xs text-muted-foreground mt-4">
                      * Manutenção válida até 25 dias após a aplicação (exceto para o serviço Sereia).
                    </p>
@@ -57,7 +67,7 @@ export function PricingSection() {
           ))}
         </div>
 
-        <div className="text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <div className="text-center animate-fade-in-up" style={{ animationDelay: `${pricingTiers.length * 0.1}s` }}>
           <h3 className="font-headline text-2xl text-foreground mb-6">Formas de Pagamento Aceitas</h3>
           <div className="flex justify-center items-center space-x-6 md:space-x-10">
             <div className="flex flex-col items-center text-muted-foreground">
