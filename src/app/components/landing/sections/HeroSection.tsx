@@ -10,7 +10,7 @@ export function HeroSection() {
     <section className="relative h-[calc(100vh-4rem)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
         src="https://placehold.co/1920x1080.png"
-        alt="Beautiful lashes background"
+        alt="Fundo com cílios bonitos"
         layout="fill"
         objectFit="cover"
         quality={90}
@@ -20,15 +20,15 @@ export function HeroSection() {
       />
       <div className="relative z-10 p-6 max-w-3xl animate-fade-in-up">
         <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          Discover Your Most Beautiful Look Yet <Sparkles className="inline-block h-10 w-10 text-primary animate-pulse" />
+          Descubra o Seu Look Mais Deslumbrante <Sparkles className="inline-block h-10 w-10 text-primary animate-pulse" />
         </h1>
         <p className="font-body text-lg sm:text-xl md:text-2xl text-primary-foreground mb-10">
-          Luxury Lash &amp; Brow Experiences by Rafaela Felix
+          Experiências de Luxo em Cílios e Sobrancelhas por Rafaela Felix
         </p>
         <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg">
           <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
             <MessageCircle className="mr-2 h-5 w-5" />
-            Book Your Spot on WhatsApp
+            Agende Seu Horário no WhatsApp
           </Link>
         </Button>
       </div>

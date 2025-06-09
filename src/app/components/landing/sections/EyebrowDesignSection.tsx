@@ -6,10 +6,10 @@ export function EyebrowDesignSection() {
     <section id="eyebrow-design" className="bg-primary/10 relative overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-8">
-          Eyebrow Design <span className="text-accent">&amp; Artistry</span>
+          Design de Sobrancelhas <span className="text-accent">&amp; Arte</span>
         </h2>
         <p className="font-body text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Perfectly sculpted brows are coming soon! Stay tuned for our new range of eyebrow design services.
+          Sobrancelhas perfeitamente esculpidas em breve! Fique atenta para nossa nova gama de serviços de design de sobrancelhas.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {[1, 2, 3].map((item) => (
@@ -17,15 +17,15 @@ export function EyebrowDesignSection() {
               <CardContent className="p-0">
                 <div className="relative h-80 w-full bg-muted/50">
                   <Image
-                    src={`https://placehold.co/600x800.png?text=Brow+Style+${item}`}
-                    alt={`Coming soon eyebrow style ${item}`}
+                    src={`https://placehold.co/600x800.png`}
+                    alt={`Estilo de sobrancelha ${item} - Em Breve`}
                     layout="fill"
                     objectFit="cover"
                     className="opacity-70"
                     data-ai-hint="eyebrow shaping model"
                   />
                    <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                    <p className="font-headline text-2xl text-white">Coming Soon</p>
+                    <p className="font-headline text-2xl text-white">Em Breve</p>
                   </div>
                 </div>
               </CardContent>

@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="font-body text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Rafaela Felix Lash &amp; Brow. All rights reserved.
+            &copy; {currentYear} Rafaela Felix Lash &amp; Brow. Todos os direitos reservados.
           </p>
           <div className="flex space-x-4">
             <Link href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-accent transition-colors">
@@ -29,7 +29,7 @@ export function Footer() {
           </div>
         </div>
         <p className="text-center text-xs text-muted-foreground mt-6">
-          Designed with <span className="text-accent">♡</span>
+          Desenvolvido com <span className="text-accent">♡</span>
         </p>
       </div>
     </footer>

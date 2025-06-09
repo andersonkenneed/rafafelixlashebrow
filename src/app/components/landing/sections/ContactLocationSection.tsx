@@ -2,20 +2,20 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Instagram, Phone, Mail } from 'lucide-react';
 
-const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/yourcodedaddress"; // Replace with actual Google Maps link
-const INSTAGRAM_LINK = "https://instagram.com/rafaelafelix"; // Replace with actual Instagram profile
+const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/yourcodedaddress"; // Substitua pelo link real do Google Maps
+const INSTAGRAM_LINK = "https://instagram.com/rafaelafelix"; // Substitua pelo perfil real do Instagram
 
 export function ContactLocationSection() {
   return (
     <section id="contact" className="bg-background">
       <div className="container mx-auto px-4">
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-          Find Us &amp; <span className="text-accent">Get In Touch</span>
+          Nossa Localização &amp; <span className="text-accent">Contato</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <Card className="shadow-lg animate-fade-in-up">
             <CardHeader>
-              <CardTitle className="font-headline text-2xl text-accent">Our Studio</CardTitle>
+              <CardTitle className="font-headline text-2xl text-accent">Nosso Estúdio</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start">
@@ -23,22 +23,24 @@ export function ContactLocationSection() {
                 <div>
                   <p className="font-body text-foreground font-semibold">Rafaela Felix Lash &amp; Brow Studio</p>
                   <Link href={GOOGLE_MAPS_LINK} target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                    Your Street Address, City, State, Postal Code
+                    Qr: 302 conjunto: D apt: 101 - Santa Maria Sul
                     <br />
-                    (Click to view on Google Maps)
+                    Em cima da DROGARIA REAL FARMA, prédio laranja
+                    <br />
+                    (Clique para ver no Google Maps)
                   </Link>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3" />
                 <Link href="tel:+5500000000000" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                  +55 (00) 00000-0000
+                  +55 (XX) XXXXX-XXXX {/* Mantenha ou atualize o número de telefone */}
                 </Link>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3" />
                 <Link href="mailto:contato@rafaelafelix.com" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                  contato@rafaelafelix.com
+                  contato@rafaelafelix.com {/* Mantenha ou atualize o email */}
                 </Link>
               </div>
             </CardContent>
@@ -46,16 +48,17 @@ export function ContactLocationSection() {
 
           <Card className="shadow-lg animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
             <CardHeader>
-              <CardTitle className="font-headline text-2xl text-accent">Connect With Us</CardTitle>
+              <CardTitle className="font-headline text-2xl text-accent">Conecte-se Conosco</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-center">
-               <p className="font-body text-muted-foreground">Follow Rafaela on Instagram for the latest styles, tips, and promotions!</p>
+               <p className="font-body text-muted-foreground">Siga Rafaela no Instagram para os últimos estilos, dicas e promoções!</p>
               <Link href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-accent-foreground bg-accent hover:bg-accent/90 transition-colors group"
               >
                 <Instagram className="h-6 w-6 mr-2 transform group-hover:scale-110 transition-transform" />
-                Follow @rafaelafelix
+                Siga @rafaelafelix
               </Link>
+               <p className="font-body text-muted-foreground mt-4 text-sm">Toque nos ícones para acessar!</p>
             </CardContent>
           </Card>
         </div>

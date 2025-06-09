@@ -15,7 +15,7 @@ export function Header() {
           <Button asChild variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground">
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" />
-              Book on WhatsApp
+              Agendar no WhatsApp
             </Link>
           </Button>
         </nav>

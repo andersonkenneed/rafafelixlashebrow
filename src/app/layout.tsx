@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'FelixLash Landing - Rafaela Felix',
-  description: 'Luxury Lash & Brow Experiences by Rafaela Felix. Book your spot on WhatsApp!',
+  title: 'FelixLash - Rafaela Felix',
+  description: 'Experiências de Luxo em Cílios e Sobrancelhas por Rafaela Felix. Agende seu horário pelo WhatsApp!',
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -12,9 +12,9 @@ export function FloatingWhatsAppButton() {
         size="lg"
         className="rounded-full shadow-lg bg-accent hover:bg-accent/90 text-accent-foreground animate-pulse-whatsapp"
       >
-        <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="Book on WhatsApp">
+        <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="Agendar no WhatsApp">
           <MessageCircle className="h-6 w-6" />
-          <span className="ml-2 hidden sm:inline">Book on WhatsApp</span>
+          <span className="ml-2 hidden sm:inline">Agendar no WhatsApp</span>
         </Link>
       </Button>
     </div>

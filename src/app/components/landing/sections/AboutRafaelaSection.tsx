@@ -9,7 +9,7 @@ export function AboutRafaelaSection() {
           <div className="flex justify-center md:justify-end animate-fade-in-up">
             <Image
               src="https://placehold.co/400x400.png"
-              alt="Rafaela Felix, Lash &amp; Brow Specialist"
+              alt="Rafaela Felix, Especialista em Cílios e Sobrancelhas"
               width={350}
               height={350}
               className="rounded-full object-cover shadow-xl border-4 border-primary"
@@ -18,13 +18,16 @@ export function AboutRafaelaSection() {
           </div>
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Meet Rafaela Felix <span className="text-accent">♡</span>
+              Conheça Rafaela Felix <span className="text-accent">♡</span>
             </h2>
             <p className="font-body text-muted-foreground text-lg mb-4">
-              Rafaela is a passionate and certified lash and brow artist dedicated to enhancing your natural beauty. With years of experience and a keen eye for detail, she creates personalized looks that make you feel confident and radiant.
+              Seja bem vinda coração! Me chamo Rafaela, tenho 27 anos e atuo na área a mais de 3 anos, sou Especialista em Fios Tecnológicos. 
+            </p>
+            <p className="font-body text-muted-foreground text-lg mb-4">
+              Minha prioridade é manter a naturalidade e realçar ainda mais sua beleza. Garanto uma ótima durabilidade e a saúde do seu fio preservada. 
             </p>
             <p className="font-body text-muted-foreground text-lg">
-              Her mission is to provide a luxurious and comfortable experience, ensuring every client leaves feeling truly special.
+              Trabalhamos com os melhores materiais do mercado e com todo profissionalismo e segurança.
             </p>
           </div>
         </div>
