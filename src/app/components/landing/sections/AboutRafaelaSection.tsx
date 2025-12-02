@@ -9,7 +9,7 @@ export function AboutRafaelaSection() {
           <div className="flex justify-center md:justify-end animate-fade-in-up">
             <Image
               src="https://i.imgur.com/3m1oHUi.png"
-              alt="Rafaela Felix, Especialista em Cílios e Sobrancelhas"
+              alt="Rafaela Felix, Especialista em Pestanas e Sobrancelhas"
               width={350}
               height={350}
               className="rounded-full object-cover shadow-xl border-4 border-primary"

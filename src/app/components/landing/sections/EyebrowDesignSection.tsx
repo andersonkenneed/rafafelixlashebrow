@@ -20,7 +20,7 @@ const eyebrowServices: EyebrowService[] = [
   {
     id: 'brow1',
     name: 'Design de Sobrancelha',
-    price: 'R$ 40,00',
+    price: '€ 11,00',
     imageUrl: 'https://i.imgur.com/7C73ku8.png',
     imageHint: 'eyebrow design shaping',
     description: 'Modelagem e design de sobrancelhas para realçar seu formato natural e harmonizar o rosto.',
@@ -28,7 +28,7 @@ const eyebrowServices: EyebrowService[] = [
   {
     id: 'brow2',
     name: 'Design de Sobrancelha + Henna',
-    price: 'R$ 50,00',
+    price: '€ 18,00',
     imageUrl: 'https://i.imgur.com/j3YWXKE.png',
     imageHint: 'eyebrow design henna',
     description: 'Design de sobrancelhas com aplicação de henna para preencher falhas e definir o olhar.',
@@ -36,7 +36,7 @@ const eyebrowServices: EyebrowService[] = [
   {
     id: 'brow3',
     name: 'Brow Lamination',
-    price: 'R$ 100,00',
+    price: '€ 35,00',
     imageUrl: 'https://i.imgur.com/KRUlMJH.png',
     imageHint: 'brow lamination fluffy',
     description: 'Técnica que alinha e define os fios da sobrancelha, proporcionando um efeito "fluffy" e volumoso.',

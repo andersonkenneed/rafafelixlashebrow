@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Rafaela Felix Lash & Brow',
-  description: 'Experiências de Luxo em Cílios e Sobrancelhas por Rafaela Felix. Agende seu horário pelo WhatsApp!',
+  description: 'Experiências de Luxo em Pestanas e Sobrancelhas por Rafaela Felix. Agende seu horário pelo WhatsApp!',
 };
 
 export default function RootLayout({

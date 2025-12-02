@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Instagram, Phone, Mail } from 'lucide-react';
 
-const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/JDEh5bjUkR8Kmfr66";
+const GOOGLE_MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Rua%205%20de%20Outubro%20N%C2%B0%202045,%20Vila%20do%20Conde%204480-745%20Porto";
 const INSTAGRAM_LINK = "https://instagram.com/rafafelixbeauty";
 
 export function ContactLocationSection() {
@@ -23,18 +23,16 @@ export function ContactLocationSection() {
                 <div>
                   <p className="font-body text-foreground font-semibold">Rafaela Felix Lash &amp; Brow Studio</p>
                   <Link href={GOOGLE_MAPS_LINK} target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                    Qr: 302 conjunto: D apt: 101 - Santa Maria Sul
+                    Rua 5 de Outubro N° 2045, Vila do Conde 4480-745 Porto
                     <br />
-                    Em cima da DROGARIA REAL FARMA, prédio laranja
-                    <br />
-                    (Clique para ver no Google Maps)
+                    (Carregar para ver no Google Maps)
                   </Link>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3" />
-                <Link href="tel:+5561998672542" className="font-body text-muted-foreground hover:text-accent transition-colors">
-                  +55 (61) 99867-2542
+                <Link href="tel:+351936534009" className="font-body text-muted-foreground hover:text-accent transition-colors">
+                  +351 936534009
                 </Link>
               </div>
               <div className="flex items-center">

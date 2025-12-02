@@ -4,29 +4,29 @@ import { CreditCard, Smartphone, CircleDollarSign } from 'lucide-react'; // Smar
 
 // Data derived from LashStylesCatalogSection for consistency
 const lashServicesData = [
-  { service: 'Efeito Molhado', applicationPrice: 'R$ 150,00', maintenancePrice: 'R$ 120,00' },
-  { service: 'Isa Atrasada – Fio Y', applicationPrice: 'R$ 160,00', maintenancePrice: 'R$ 130,00' },
-  { service: 'Patygirl – Fio 3D', applicationPrice: 'R$ 170,00', maintenancePrice: 'R$ 140,00' },
-  { service: 'Girlpower – Fio 4D', applicationPrice: 'R$ 170,00', maintenancePrice: 'R$ 140,00' },
-  { service: 'Duda Sensata – Fio 5D', applicationPrice: 'R$ 180,00', maintenancePrice: 'R$ 150,00' },
-  { service: 'Sereia', applicationPrice: 'R$ 130,00', maintenancePrice: 'Sem manutenção' },
-  { service: 'Felix Fox – Efeito Fox / Delineado', applicationPrice: 'R$ 180,00', maintenancePrice: 'R$ 150,00' },
-  { service: 'Brown – Fio Marrom', applicationPrice: 'R$ 170,00', maintenancePrice: 'R$ 140,00' },
+  { service: 'Efeito Molhado', applicationPrice: '€ 42,00', maintenancePrice: '€ 32,00' },
+  { service: 'Volume Brasileiro – Fio Y', applicationPrice: '€ 45,00', maintenancePrice: '€ 35,00' },
+  { service: 'Volume 3D', applicationPrice: '€ 45,00', maintenancePrice: '€ 35,00' },
+  { service: 'Volume 4D', applicationPrice: '€ 45,00', maintenancePrice: '€ 35,00' },
+  { service: 'Volume 5D', applicationPrice: '€ 48,00', maintenancePrice: '€ 38,00' },
+  { service: 'Sereia', applicationPrice: '€ 35,00', maintenancePrice: 'Sem manutenção' },
+  { service: 'Fox EYES', applicationPrice: '€ 48,00', maintenancePrice: '€ 38,00' },
+  { service: 'Brown – Fio Marrom', applicationPrice: '€ 45,00', maintenancePrice: '€ 35,00' },
 ];
 
 const eyebrowServicesData = [
-  { service: 'Design de Sobrancelha', price: 'R$ 40,00' },
-  { service: 'Design de Sobrancelha + Henna', price: 'R$ 50,00' },
-  { service: 'Brow Lamination', price: 'R$ 100,00' },
+  { service: 'Design de Sobrancelha', price: '€ 11,00' },
+  { service: 'Design de Sobrancelha + Henna', price: '€ 18,00' },
+  { service: 'Brow Lamination', price: '€ 35,00' },
 ];
 
 const pricingTiers = [
   {
-    name: "Aplicação de Cílios",
+    name: "Aplicação de Pestanas",
     items: lashServicesData.map(s => ({ service: s.service, price: s.applicationPrice })),
   },
   {
-    name: "Manutenção de Cílios",
+    name: "Manutenção de Pestanas",
     items: lashServicesData.map(s => ({ service: s.service, price: s.maintenancePrice })),
   },
   {
@@ -58,7 +58,7 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                 {tier.name === "Manutenção de Cílios" && (
+                 {tier.name === "Manutenção de Pestanas" && (
                    <p className="text-xs text-muted-foreground mt-4">
                      * Manutenção válida até 25 dias após a aplicação (exceto para o serviço Sereia).
                    </p>

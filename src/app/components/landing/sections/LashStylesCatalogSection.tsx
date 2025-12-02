@@ -23,8 +23,8 @@ const lashStyles: LashStyle[] = [
   {
     id: '1',
     name: 'Efeito Molhado',
-    applicationPrice: 'R$ 150,00',
-    maintenancePrice: 'R$ 120,00',
+    applicationPrice: '€ 42,00',
+    maintenancePrice: '€ 32,00',
     imageUrl: 'https://i.imgur.com/LUpwM8Y.png',
     imageHint: 'wet look lashes',
     description: 'Efeito sofisticado que simula cílios úmidos, realçando o olhar com brilho e definição.',
@@ -32,9 +32,9 @@ const lashStyles: LashStyle[] = [
   },
   {
     id: '2',
-    name: 'Isa Atrasada – Fio Y',
-    applicationPrice: 'R$ 160,00',
-    maintenancePrice: 'R$ 130,00',
+    name: 'Volume Brasileiro – Fio Y',
+    applicationPrice: '€ 45,00',
+    maintenancePrice: '€ 35,00',
     imageUrl: 'https://i.imgur.com/BFIxp24.png',
     imageHint: 'Y-shape lashes',
     description: 'Fios em formato Y para um volume delicado, leve e marcante.',
@@ -42,9 +42,9 @@ const lashStyles: LashStyle[] = [
   },
   {
     id: '3',
-    name: 'Patygirl – Fio 3D',
-    applicationPrice: 'R$ 170,00',
-    maintenancePrice: 'R$ 140,00',
+    name: 'Volume 3D',
+    applicationPrice: '€ 45,00',
+    maintenancePrice: '€ 35,00',
     imageUrl: 'https://i.imgur.com/mUTOTn5.png',
     imageHint: '3D volume lashes',
     description: 'Volume tridimensional com fios 3D para um olhar expressivo e cheio de glamour.',
@@ -52,9 +52,9 @@ const lashStyles: LashStyle[] = [
   },
   {
     id: '4',
-    name: 'Girlpower – Fio 4D',
-    applicationPrice: 'R$ 170,00',
-    maintenancePrice: 'R$ 140,00',
+    name: 'Volume 4D',
+    applicationPrice: '€ 45,00',
+    maintenancePrice: '€ 35,00',
     imageUrl: 'https://i.imgur.com/MTbdSbW.png',
     imageHint: '4D volume lashes',
     description: 'Mais volume e impacto com a técnica de fios 4D, para um olhar poderoso.',
@@ -62,9 +62,9 @@ const lashStyles: LashStyle[] = [
   },
   {
     id: '5',
-    name: 'Duda Sensata – Fio 5D',
-    applicationPrice: 'R$ 180,00',
-    maintenancePrice: 'R$ 150,00',
+    name: 'Volume 5D',
+    applicationPrice: '€ 48,00',
+    maintenancePrice: '€ 38,00',
     imageUrl: 'https://i.imgur.com/UuSgiV8.png',
     imageHint: '5D volume lashes',
     description: 'Máximo volume e sofisticação com fios 5D, para um olhar intenso e deslumbrante.',
@@ -73,27 +73,27 @@ const lashStyles: LashStyle[] = [
   {
     id: '6',
     name: 'Sereia',
-    applicationPrice: 'R$ 130,00',
+    applicationPrice: '€ 35,00',
     maintenancePrice: 'Sem manutenção',
     imageUrl: 'https://i.imgur.com/cJh6HNf.png',
     imageHint: 'mermaid lashes cat eye',
-    description: 'Destaque especial apenas na cauda dos cílios, criando um efeito "cat eye" sutil e charmoso.',
+    description: 'Destaque especial apenas na cauda das pestanas, criando um efeito "cat eye" sutil e charmoso.',
   },
   {
     id: '7',
-    name: 'Felix Fox – Efeito Fox / Delineado',
-    applicationPrice: 'R$ 180,00',
-    maintenancePrice: 'R$ 150,00',
-    imageUrl: 'https://i.imgur.com/mOngGuO.png',
+    name: 'Fox EYES',
+    applicationPrice: '€ 48,00',
+    maintenancePrice: '€ 38,00',
+    imageUrl: 'https://i.imgur.com/5ZvuX9h.png',
     imageHint: 'fox eye lashes eyeliner effect',
-    description: 'Cílios alongados no canto externo para um efeito "fox eye" ou delineado, super moderno e sedutor.',
+    description: 'Pestanas alongadas no canto externo para um efeito "fox eye" ou delineado, super moderno e sedutor.',
     maintenanceNote: 'Manutenção válida até 25 dias após a aplicação.',
   },
   {
     id: '8',
     name: 'Brown – Fio Marrom',
-    applicationPrice: 'R$ 170,00',
-    maintenancePrice: 'R$ 140,00',
+    applicationPrice: '€ 45,00',
+    maintenancePrice: '€ 35,00',
     imageUrl: 'https://i.imgur.com/cQleY9q.png',
     imageHint: 'brown lashes natural look',
     description: 'Suavidade e naturalidade com fios em tom marrom, perfeito para um look discreto ou para loiras.',
@@ -118,7 +118,7 @@ export function LashStylesCatalogSection() {
     <section id="lash-styles" className="bg-background">
       <div className="container mx-auto px-4">
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
-          Nossos Estilos de Cílios Exclusivos
+          Nossos Estilos de Pestanas Exclusivos
           <Image
             src="https://i.imgur.com/KJ3IYMR.png"
             alt="Ícone de brilho"
