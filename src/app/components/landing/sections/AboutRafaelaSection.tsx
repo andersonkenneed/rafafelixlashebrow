@@ -21,7 +21,7 @@ export function AboutRafaelaSection() {
               Conheça Rafaela Felix <span className="text-accent">♡</span>
             </h2>
             <p className="font-body text-muted-foreground text-lg mb-4">
-              Seja bem vinda coração! Me chamo Rafaela, tenho 27 anos e atuo na área a mais de 3 anos, sou Especialista em Fios Tecnológicos. 
+              Seja bem vinda coração! Me chamo Rafaela, tenho 28 anos e atuo na área a mais de 5 anos, sou Especialista em Fios Tecnológicos. 
             </p>
             <p className="font-body text-muted-foreground text-lg mb-4">
               Minha prioridade é manter a naturalidade e realçar ainda mais sua beleza. Garanto uma ótima durabilidade e a saúde do seu fio preservada. 

@@ -73,20 +73,14 @@ export function PricingSection() {
           <div className="flex justify-center items-center space-x-6 md:space-x-10">
             <div className="flex flex-col items-center text-muted-foreground">
               <Smartphone className="h-10 w-10 text-accent mb-2" />
-              <span className="font-body">PIX</span>
+              <span className="font-body">MB WAY</span>
             </div>
             <div className="flex flex-col items-center text-muted-foreground">
               <CircleDollarSign className="h-10 w-10 text-accent mb-2" />
-              <span className="font-body">Dinheiro</span>
-            </div>
-            <div className="flex flex-col items-center text-muted-foreground">
-              <CreditCard className="h-10 w-10 text-accent mb-2" />
-              <span className="font-body">Cartão de Crédito/Débito</span>
+              <span className="font-body">Euro</span>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4">
-            (Verifique as condições de parcelamento para cartão)
-          </p>
+          
         </div>
       </div>
     </section>
